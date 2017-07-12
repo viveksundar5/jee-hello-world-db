@@ -1,13 +1,10 @@
 # Hello World DB
 
-## Requirements
-```
-* Wildfly running in an Alpine Linux with MySQL datasource: wildfly-alpine-mysql
-```
-
 ## Description
 A simple application in Java EE 7, which responds to REST requests and fetches from a Database.
 
+## Requirements
+* Wildfly with MySQL datasource. Example: kerdlix/wildfly-alpine-mysql
 
 ## Setup
 Create a Docker MySQL instance:
@@ -19,8 +16,8 @@ Run the [database script](./database/init.sql).
 
 ## Build
 ```
-* mvn clean package
-* docker build --rm --tag=kerdlix/docker-wildfly-hello-world-db .
+mvn clean package
+docker build --rm --tag=kerdlix/docker-wildfly-hello-world-db .
 ```
 
 ## Run
