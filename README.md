@@ -30,3 +30,7 @@ docker run -it -p 8080:8080 -p 9990:9990 -e DATASOURCE_CONNECTION=jdbc:mysql://m
 http://localhost:8080/1
 http://localhost:8080/2
 ```
+
+
+## References
+* [Docker MySQL](https://hub.docker.com/r/library/mysql/)
