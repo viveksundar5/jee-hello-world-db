@@ -28,3 +28,8 @@ Run the [database script](./database/init.sql).
 docker run -it -p 8080:8080 -p 9990:9990 -e DATASOURCE_CONNECTION=jdbc:mysql://mysqlHelloWorldDB:3306/test -e DATASOURCE_USERNAME=redhat -e DATASOURCE_PASSWORD=redhat@123 --link mysqlHelloWorldDB:mysqlHelloWorldDB kerdlix/docker-wildfly-hello-world-db
 ```
 
+## HTTP Calls
+```
+http://localhost:8080/1
+http://localhost:8080/2
+```
