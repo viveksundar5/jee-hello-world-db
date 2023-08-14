@@ -1,0 +1,15 @@
+name: sql-test
+run-name: ${{ github.actor }} is testing SQL
+on: [push]
+jobs:
+   create-db:
+    runs-on: ubuntu-latest
+    env:
+      DB_DATABASE: test_db
+      DB_USER: root
+      DB_PASSWORD: root
+      
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up MySQL
+      run: mysql -h 127.0.0.1 --port 3306 -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} -e "source sample_for_deploy.sql"
