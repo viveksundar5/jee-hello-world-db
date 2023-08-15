@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing SQL
 on: workflow_dispatch
 jobs:
    create-db:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     env:
       DB_DATABASE: gravity_books
       DB_USER: root
