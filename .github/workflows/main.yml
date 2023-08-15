@@ -5,7 +5,7 @@ jobs:
    create-db:
     runs-on: ubuntu-latest
     env:
-      DB_DATABASE: vivek_db
+      DB_DATABASE: gravity_books
       DB_USER: root
       DB_PASSWORD: Svs@9551
       
