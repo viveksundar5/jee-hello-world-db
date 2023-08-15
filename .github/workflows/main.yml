@@ -1,6 +1,6 @@
 name: sql-test
 run-name: ${{ github.actor }} is testing SQL
-on: [push]
+on: workflow_dispatch
 jobs:
    create-db:
     runs-on: ubuntu-latest
