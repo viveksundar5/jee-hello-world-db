@@ -8,7 +8,7 @@ jobs:
       DB_DATABASE: gravity_books
       DB_USER: root
       DB_PASSWORD: Svs@9551
-      DB_HOST: 127.0.0.1
+      DB_HOST: localhost
       
     steps:
     - uses: actions/checkout@v3
