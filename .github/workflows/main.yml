@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up MySQL
-      run: mysql -h 127.0.0.1 --port 3306 -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} -e "source init.sql"
+      run: mysql -h localhost --port 3306 -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} -e "source init.sql"
