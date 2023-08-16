@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up MySQL
-      run: mysql -h${{ env. DB_HOST }} --port 3306 -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} -e "source init.sql"
+      run: mysql -h ${{ env. DB_HOST }} --port 3306 -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} -e "source init.sql"
