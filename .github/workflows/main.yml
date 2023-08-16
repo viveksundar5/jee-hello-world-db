@@ -18,5 +18,5 @@ jobs:
           DB_PASSWORD: Svs@9551
           DB_HOST: 127.0.0.1
         run: |
-            mysql -h ${{ env.DB_HOST }} --port 3306 -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} ${{ env.DB_Database }} < sample_for_action.sql
+            mysql -h ${{ env.DB_HOST }} --port 3306 -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} ${{ env.DB_Database }} -e "source sample_for_action.sql"
  
