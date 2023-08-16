@@ -13,7 +13,7 @@ jobs:
    
       - name: Run MySQL Script  
         env:
-          DB_DATABASE: test_db
+          DB_DATABASE: test
           DB_USER: root
           DB_PASSWORD: Svs@9551
           DB_HOST: 127.0.0.1
